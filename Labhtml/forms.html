@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="name">ชื่อ:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="gender">เพศ:</label>
+        <select id="gender" name="gender">
+            <option value="male">ชาย</option>
+            <option value="female">หญิง</option>
+            <option value="other">อื่นๆ</option>
+        </select><br><br>
+
+        <label for="email">อีเมล:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label>ความสนใจ:</label><br>
+        <input type="checkbox" id="sports" name="interest" value="sports">
+        <label for="sports">กีฬา</label><br>
+        <input type="checkbox" id="music" name="interest" value="music">
+        <label for="music">ดนตรี</label><br>
+        <input type="checkbox" id="travel" name="interest" value="travel">
+        <label for="travel">ท่องเที่ยว</label><br><br>
+        <label for="User">ผู้ใช้:</label>
+        <input type="text" id="User" name="User" required><br>
+        <label for="password">รหัสผ่าน:</label>
+        <input type="password" id="password" name="password" required><br><br>
+       
+        <label for="bio">จังหวัด:</label>
+        <select id="bio" name="bio">
+            <option value="เชียงใหม่">เชียงใหม่</option>
+            <option value="น่าน">น่าน</option>
+            <option value="ลำปาง">ลำปาง</option>
+        </select><br><br>
+        <button type="submit">ส่งข้อมูล</button>
+    </form>
+    
+</body>
+</html>

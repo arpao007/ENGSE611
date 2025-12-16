@@ -1,91 +1,136 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แนะนำตัวเอง</title>
+    <title>Document</title>
 </head>
 <body>
-
-<header>
-    <h1>ณัฐพล แซ่วั่ง</h1>
-    <p>เว็บไซต์แนะนำตัวอย่างง่ายด้วย HTML5</p>
-</header>
-
-<nav>
-    <a href="#about">เกี่ยวกับฉัน</a> |
-    <a href="#skills">ทักษะ</a> |
-    <a href="#education">การศึกษา</a> |
-    <a href="#contact">ติดต่อ</a>
-</nav>
-
-<main>
-    <section id="about">
-        <h2>เกี่ยวกับฉัน</h2>
-        <p>ผมกำลังเรียนรู้การพัฒนาเว็บไซต์</p>
-        <p>ผมกำลังศึกษาอยู่ระดับปริญญาตรี ชั้นปีที่ 1 ภาคเรียนที่ 2</p>
-        <p>มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</p>
-        #ใส่รูปภาพโปรไฟล์สุดหล่อของตัวเองด้วยการโหลดรูปมาใส่โปรแกรม <br></br>
-        <img src="./profile.jpg" alt="รูปโปรไฟล์ ณัฐพล แซ่วั่ง" width="200">
-    </section>
-
-    <section id="skills">
-        <h2>ทักษะ</h2>
-        <ul>
-            <li>HTML</li>
-            <li>Java</li>
-            <li>พื้นฐานการเขียนโปรแกรม</li>
-            <li>เล่นเปียโน</li>
-        </ul>
-    </section>
-
-    <section id="education">
-        <h2>ตารางการศึกษา</h2>
-        <table border="1">
-            <tr>
-                <th rowspan="2">ปี</th>
-                <th colspan="2">รายละเอียด</th>
-            </tr>
-            <tr>
-                <th>สถาบัน</th>
-                <th>ระดับ</th>
-            </tr>
-            <tr>
-                <td>2025</td>
-                <td>มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</td>
-                <td>ปริญญาตรี ปี 1 ภาคเรียนที่ 2</td>
-            </tr>
-        </table>
-    </section>
-
-    <section id="contact">
-        <h2>ติดต่อ</h2>
+    <h2>สมัคร</h2>
+        <p>ง่ายและเร็ว</p>
         <form>
-            <label>ชื่อ</label><br>
-            <input type="text"><br><br>
-
-            <label>Email</label><br>
-            <input type="email"><br><br>
-
-            <label>ข้อความ</label><br>
-            <textarea></textarea><br><br>
-
-            <input type="submit" value="ส่ง">
-        </form>
-    </section>
-#ใส่ช่องทางติดต่อสุดหล่อลงไป
-    <section>
-        <h2>Social Media</h2>
-        <a href="https://www.facebook.com/natthaphon.saewang.93224" target="_blank">
-            Facebook
-        </a>
-    </section>
-
-</main>
-
-<footer>
-    <p>&copy; 2025 ณัฐพล แซ่วั่ง</p>
-</footer>
-
+        <label for="name"></label>
+        <input type="text" id="name" name="name" required placeholder="ชื่อ">
+        <label for ="surname"></label>
+        <input type="text" id="surname" name="surname" required placeholder="นามสกุล"><br><br>
+        <label for="contact"></label>
+        <input type="number or email "  required placeholder="หมายเลขโทรศัพท์หรืออีเมล"><br><br>
+        <label for="new password" ></label>
+        <input type="password" id="new password" name="new password" required placeholder="new password"><br><br>
+        <label for="date of birth">วันเกิด</label>
+        <select id="date of birth" name="date of birth">
+            <opstion value="day">1</option>
+            <option value="day">2</option>
+            <option value="day">3</option>
+            <option value="day">4</option>
+            <option value="day">5</option>
+            <option value="day">6</option>
+            <option value="day">7</option>
+            <option value="day">8</option>
+            <option value="day">9</option>
+            <option value="day">10</option>
+            <option value="day">11</option>
+            <option value="day">12</option>
+            <option value="day">13</option>
+            <option value="day">14</option>
+            <option value="day">15</option>
+            <option value="day">16</option>
+            <option value="day">17</option>
+            <option value="day">18</option>
+            <option value="day">19</option>
+            <option value="day">20</option>
+            <option value="day">21</option>
+            <option value="day">22</option>
+            <option value="day">23</option>
+            <option value="day">24</option>
+            <option value="day">25</option>
+            <option value="day">26</option>
+            <option value="day">27</option>
+            <option value="day">28</option>
+            <option value="day">29</option>
+            <option value="day">30</option>
+            <option value="day">31</option>
+        </select>
+        <select id="month" name="month">
+            <option value="month">มกราคม</option>
+            <option value="month">กุมภาพันธ์</option>
+            <option value="month">มีนาคม</option>
+            <option value="month">เมษายน</option>
+            <option value="month">พฤษภาคม</option>
+            <option value="month">มิถุนายน</option>
+            <option value="month">กรกฎาคม</option>
+            <option value="month">สิงหาคม</option>
+            <option value="month">กันยายน</option>
+            <option value="month">ตุลาคม</option>
+            <option value="month">พฤศจิกายน</option>
+            <option value="month">ธันวาคม</option>
+        </select>
+        <select id="year" name="year">
+            <option value="year">1990</option>
+            <option value="year">1991</option>
+            <option value="year">1992</option>
+            <option value="year">1993</option>
+            <option value="year">1994</option>
+            <option value="year">1995</option>
+            <option value="year">1996</option>
+            <option value="year">1997</option>
+            <option value="year">1998</option>
+            <option value="year">1999</option>
+            <option value="year">2000</option>
+            <option value="year">2001</option>
+            <option value="year">2002</option>
+            <option value="year">2003</option>
+            <option value="year">2004</option>
+            <option value="year">2005</option>
+            <option value="year">2006</option>
+            <option value="year">2007</option>
+            <option value="year">2008</option>
+            <option value="year">2009</option>
+            <option value="year">2010</option>
+            <option value="year">2011</option>
+            <option value="year">2012</option>
+            <option value="year">2013</option>
+            <option value="year">2014</option>
+            <option value="year">2015</option>
+            <option value="year">2016</option>
+            <option value="year">2017</option>
+            <option value="year">2018</option>
+            <option value="year">2019</option>
+            <option value="year">2020</option>
+            <option value="year">2021</option>
+            <option value="year">2022</option>
+            <option value="year">2023</option>
+            <option value="year">2024</option>
+            <option value="year">2025</option>
+        </select><br><br>
+        <label for="gender">เพศ</label>
+        <table border="0" width="100%" cellpadding="0">
+            <tr>
+                <td width="50%">
+                    <table border="1" bordercolor="black" cellpadding="5" cellspacing="0"width="100%">
+                        <tr>
+                            <td>
+                    <input type="radio"name="gender" value="male">
+                    <label for="male">ชาย</label> 
+                       </tr>
+                    </td>
+                    </table>
+                </td>
+                <td width="50%">
+                    <table border="1" bordercolor="black" cellpadding="5" cellspacing="0"width="100%">
+                        <tr>
+                            <td>
+                    <input type="radio"name="gender" value="female">
+                    <label for="female">หญิง</label>
+                        </tr>
+                            </td>
+                    </table>
+            </tr>
+                </td>        
+        </table>
+    </td>
+        <p1>เมื่อคลิกสมัครแสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และ นโยบายคุกกี้ของเรา คุณอาจจะได้รับการแจ้งเตือนทาง SMS จากเราและสามารถเลือกไม่รับได้ในภายหลัง</p1><br><br>
+        <button type="submit" style="width: 100%; height: 100%">สมัคร</button>
+    </form>
 </body>
 </html>

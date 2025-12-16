@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>สมัคร</h2>
+        <p>ง่ายและเร็ว</p>
+        <form>
+        <label for="name">ชื่อ</label>
+        <input type="text" id="name" name="name" required>
+        <label for ="surname">นามสกุล</label>
+        <input type="text" id="surname" name="surname" required><br><br>
+        <label for="contact">เบอร์ติดต่อหรืออีเมล</label>
+        <input type="number or email "  required><br><br>
+        <label for="new password" >รหัสผ่านใหม่</label>
+        <input type="password" id="new password" name="new password" required><br><br>
+        <label for="date of birth">วันเกิด</label>
+        <select id="date of birth" name="date of birth">
+            <option value="day">14</option>
+        </select>
+        <select id="month" name="month">
+            <option value="month">กันยายน</option>
+        </select>
+        <select id="year" name="year">
+            <option value="year">2020</option>
+        </select><br><br>
+        <label for="gender">เพศ</label>
+        <input type="radio"name="gender" value="male">
+        <label for="male">ชาย</label> 
+        <input type="radio"name="gender" value="female">
+        <label for="female">หญิง</label><br><br>
+        <p1>เมื่อคลิกสมัครแสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และ นโยบายคุกกี้ของเรา คุณอาจจะได้รับการแจ้งเตือนทางsms</p1>
+    </form>
+    
+</body>
+</html>

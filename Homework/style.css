@@ -7,18 +7,20 @@ h1 {
     color: navy;
 }
 .highlight {
-    color: red;
-    background-color: yellow;
+    color: gray;
+    background-color:rgb(54, 236, 81);
     font-weight: bold;
 }
 #main-header {
     text-align: center;
     color: darkblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 p {
     text-align: center;
     font-weight: 300;
     font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 em {
     font-style: italic;

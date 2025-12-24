@@ -1,0 +1,25 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: navy;
+}
+.highlight {
+    color: red;
+    background-color: yellow;
+    font-weight: bold;
+}
+#main-header {
+    text-align: center;
+    color: darkblue;
+}
+p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+}
+em {
+    font-style: italic;
+}

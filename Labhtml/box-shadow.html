@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #0077ff;
+  margin: 20px;
+  background-color: #cce5ff;
+}
+
+/* ตัวอย่างแบบปกติ (content-box) */
+.content-box {
+  box-sizing: content-box;
+}
+
+.box-shadow-example {
+    box-shadow: 10px 10px 5px #888888;
+}
+.box-shadow-em {
+    box-shadow: 0.5em 0.5em 1em #888888,
+                1em 1em 2em #555555;
+}
+
+/* ตัวอย่างแบบ border-box */
+.border-box {
+  box-sizing: border-box;
+  background-color: #ffd8cc; 
+}
+
+.block-example div{
+  display:inline;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #c8e6ff;
+}
+
+.inline-example span{
+  display:inline-block;
+  padding: 10px;
+  background-color: #ffc8c8;
+  margin-bottom: 5px;
+}
+
+.inline-block-example div{
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background-color: #c8ffc8;
+  margin-bottom: 5px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #4caf50;
+}
+.flex-box{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background-color:#f0f0f0;
+  padding: 15px;
+  border: 2px solid #ccc;
+  height: 150px;
+}
+.item{
+  background-color: navy;
+  color: white;
+  font-size: 20px;
+  width: 80px;
+  text-align: center;
+  padding: 10px 0;
+}
+.stretch .item {
+  background: teal;
+}
+.flex-box1{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background-color:#f0f0f0;
+  padding: 15px;
+  border: 2px solid #ccc;
+  height: 200px;
+}
+.item1{
+  background-color: navy;
+  color: white;
+  font-size: 20px;
+  width: 80px;
+  text-align: center;
+  padding: 10px 0;
+}
+.stretch .item1 {
+  background: teal;
+  height: auto;
+}
+</style>
+</head>
+
+<body>
+
+<h2>CSS Box Model</h2>
+
+<h3>1) box-sizing: content-box (ค่าปกติ)</h3>
+<div class="box content-box">
+  ความกว้างที่กำหนด = 200px  
+  (ไม่รวม padding + border)
+</div>
+
+<h3>2) box-sizing: border-box</h3>
+<div class="box border-box">
+  ความกว้างที่กำหนด = 200px  
+  (รวม padding + border อยู่ใน 200px)
+</div>
+
+<h3>3) ตัวอย่างการใช้ box-shadow</h3>
+<div class="box box-shadow-example">
+  กล่องนี้มีเงา (box-shadow)
+</div>
+<h3>ตัวอย่างการใช้ box-shadow แบบ multiple</h3>
+    <div class="box box-shadow-em">
+      กล่องนี้มีเงาหลายชั้น (multiple box-shadow)
+    </div>
+
+<h3>4) ตัวอย่างการใช้ display: inline-block</h3>
+<div class="inline-block-example">
+  <div>กล่องที่ 1</div>
+  <div>กล่องที่ 2</div>
+  <div>กล่องที่ 3</div>
+</div>
+<h3>justify-content : center</h3>
+<div class="flex-box" style="justify-content: center;">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+<h3>5) display: flex</h3>
+<div class="flex-box" style="justify-content: space-between;">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+<h3></h3>6) align-items: center</h3>
+<div class="flex-box" style="align-items: center;">
+  <div class="item" style="height: 40px;">1</div>
+  <div class="item" style="height: 80px;">2</div>
+  <div class="item" style="height: 60px;">3</div>
+</div>
+<h3></h3>7) align-items: stretch (ค่าปกติ)</h3>
+<div class="flex-box stretch">
+  <div class="item">A</div>
+  <div class="item">B</div>
+  <div class="item">C</div>
+</div>
+<h3></h3>
+</body>
+</html>

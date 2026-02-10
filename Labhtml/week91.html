@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="runDemo()">Run demo</button>
+    <script>
+        function runDemo() {
+            console.clear();
+            const output = [];
+
+            let stdentName = "สมชาย";
+            let age = 20;
+            let isStudent = true;
+            const university = "มหาวิทยาลัยตัวอย่าง";
+
+            output.push("ชื่อนักศึกษา:" + stdentName);
+            console.log("ชื่อนักศึกษา:" + stdentName);
+            output.push("อายุ:" + age + " ปี");
+            console.log("อายุ:" + age + " ปี");
+            
+            age = 21;
+            output.push("อายุใหม่: " + age + " ปี");
+            console.log("อายุใหม่: " + age + " ปี");
+
+            try {
+                universityname = "มหาวิทยาลัยใหม่"; // ทำให้เกิด typeError
+            } catch (e) {
+                output.push("เกิดข้อผิดพลาด: " +  e.message);
+                console.error(e.message);
+            }
+
+            document.getElementById("outputBox").textContent = output.join("\n");
+        }
+    </script>
+</body>
+</html>

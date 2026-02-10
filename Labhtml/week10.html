@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre id="output">ผลลัพธ์จะแสดงที่นี่</pre>
+    <button onclick="runStringDemo()">Run String Demo</button>
+
+    <script>
+        function runStringDemo() {
+            const out = [];
+
+            let text = "JavaScript เจ๋งมาก";
+            let firstName = "สมชาย";
+
+            out.push(`สวัสดี ${firstName}!`);
+            console.log(`สวัสดี ${firstName}!`);
+
+            out.push("ความยาว : " + text.length);
+            console.log("ความยาว : " + text.length);
+
+            out.push("ข้อความตัวพิมพ์ใหญ่: " + text.toUpperCase());
+            console.log("ข้อความตัวพิมพ์ใหญ่: " + text.toUpperCase());
+
+            out.push("ตัวเล็ก: " + text.toLowerCase());
+            console.log("ตัวเล็ก: " + text.toLowerCase());
+
+            out.push('มี "JavaScript" อยู่ในข้อความหรือไม่? ' + text.includes("Java"));
+            console.log('มี "JavaScript" อยู่ในข้อความหรือไม่? ' + text.includes("Java"));
+
+            out.push('ตำแหน่ง Script ในข้อความ: ' + text.indexOf("Script"));
+            console.log('ตำแหน่ง Script ในข้อความ: ' + text.indexOf("Script"));
+
+            out.push('ตัดคำ(0-4): ' + text.slice(0, 4));
+            console.log('ตัดคำ(0-4): ' + text.slice(0, 4));
+
+            out.push('แทนที่: ' + text.replace("เจ๋งมาก", "สุดยอด"));
+            console.log('แทนที่: ' + text.replace("เจ๋งมาก", "สุดยอด"));
+
+            document.getElementById("output").textContent = out.join("\n");
+
+            console.clear();
+            out.forEach(line => console.log(">" + line));
+        }
+    </script>
+</body>
+</html>

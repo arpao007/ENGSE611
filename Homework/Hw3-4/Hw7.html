@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loop Practice</title>
+</head>
+<body>
+
+<h2>For Loop Practice</h2>
+<div id="output"></div>
+
+<script>
+    let maxNumber = 20;
+    let result = "";
+    let evenCount = 0;
+    let oddCount = 0;
+
+    for (let i = 0; i <= maxNumber; i++) {
+        if (i % 2 === 0) {
+            result += i + " เป็นเลขคู่<br>";
+            evenCount++;
+        } else {
+            result += i + " เป็นเลขคี่<br>";
+            oddCount++;
+        }
+    }
+
+    result += "<br>จำนวนเลขคู่ทั้งหมด: " + evenCount + "<br>";
+    result += "จำนวนเลขคี่ทั้งหมด: " + oddCount + "<br>";
+
+    result += "<br>นับถอยหลัง 10 → 0<br>";
+
+    for (let i = 10; i >= 0; i--) {
+        result += i + "<br>";
+    }
+
+    document.getElementById("output").innerHTML = result;
+    console.log(result);
+</script>
+
+</body>
+</html>

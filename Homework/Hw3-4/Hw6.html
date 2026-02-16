@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Switch Grade</title>
+</head>
+<body>
+
+<h2>ตรวจสอบเกรด (Switch)</h2>
+<div id="output"></div>
+
+<script>
+    let grade = prompt("กรอกเกรด (A-F):");
+    grade = grade.toUpperCase();
+
+    let message = "";
+
+    switch (grade) {
+        case "A":
+            message = "เกรด A : ยอดเยี่ยม";
+            break;
+        case "B":
+            message = "เกรด B : ดีมาก";
+            break;
+        case "C":
+            message = "เกรด C : พอใช้";
+            break;
+        case "D":
+            message = "เกรด D : ควรปรับปรุง";
+            break;
+        case "F":
+            message = "เกรด F : ไม่ผ่าน";
+            break;
+        default:
+            message = "เกรดไม่ถูกต้อง (ต้องเป็น A-F เท่านั้น)";
+    }
+
+    document.getElementById("output").innerText = message;
+    console.log(message);
+</script>
+
+</body>
+</html>
